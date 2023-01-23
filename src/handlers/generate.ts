@@ -2,6 +2,7 @@ import { Configuration, OpenAIApi } from "openai";
 import prisma from "../db";
 
 const configuration = new Configuration({
+    organization: "org-9xh1WVemIZUio2DjJhzbFU9u",
     apiKey: process.env.OPENAI_API_KEY,
 });
 
