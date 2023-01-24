@@ -27,6 +27,7 @@ export const storeSpeech = async (req, res, prompt) => {
 }
 
 export const generateSpeech = async (req, res) => {
+    console.log('test')
     try {
         const response = await openai.createCompletion({
             model: "text-davinci-003",
