@@ -23,7 +23,7 @@ model Speech {
     name String
     speech_type String
     years String
-    speech String
+    speech String @db.VarChar(3000)
     belongsToId String
     belongsTo User @relation(fields: [belongsToId], references: [id])
 
